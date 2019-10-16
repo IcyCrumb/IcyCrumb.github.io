@@ -40,5 +40,5 @@ SetCookie(CurrentUrl)
 
 
 
-alert(document.cookie);
-alert(document.referrer);
+//alert(document.cookie);
+//alert(document.referrer);
