@@ -40,4 +40,5 @@ SetCookie(CurrentUrl)
 
 
 
-alert(document.cookie); // ...; my%20name=John%20Smith
+alert(document.cookie);
+alert(document.referrer);
