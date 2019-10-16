@@ -32,11 +32,11 @@ function SetCookie(value) {
 
     return
 }
+;
 
 
-
-var CurrentUrl = window.location.href       //GetURL()
-SetCookie(CurrentUrl)
+//var CurrentUrl = window.location.href       //GetURL()
+//SetCookie(CurrentUrl)
 
 
 
