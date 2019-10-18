@@ -1,5 +1,5 @@
 function GetURL() {
-    alert ("Page URL: " + window.location.href)
+    alert ("Page URL: " + window.location.href);
 }
 
 
@@ -8,7 +8,7 @@ function setCookie(cookieName, cookieValue, expireTime, path) {
     j.setTime(j.getTime());
     expireTime && (expireTime *= 864E5);    // 864E5 =  1000*60*60*24 то есть 24 часа в миллисекундах
     j = new Date(j.getTime() + expireTime);
-    document.cookie = cookieName + "=" + cookieValue + (expireTime ? ";expires=" + j.toGMTString() : "") + (path ? ";path=" + path : "")
+    document.cookie = cookieName + "=" + cookieValue + (expireTime ? ";expires=" + j.toGMTString() : "") + (path ? ";path=" + path : "");
 }
 
 function writeLogic(cookieName) {
@@ -68,7 +68,7 @@ function getTrafficSource(cookieName, hostname) {
         var medium = trafficSources.medium;
 
         var rightNow = new Date();
-        var value = source + ' / '  + medium
+        var value = source + ' / '  + medium;
 
         return value;
 }
@@ -78,9 +78,7 @@ function getTrafficSource(cookieName, hostname) {
 // Self-invoking function
 (function() {
 
-    if (document.referrer < 0) {
-        break;
-    } else {
+    if (document.referrer > -1) {
         writeLogic('TrafficSource');
     }
 
