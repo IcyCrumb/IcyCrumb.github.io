@@ -28,6 +28,7 @@ function getParam(s, q) {
 function calculateTrafficSource() {
     var source='', medium=''
     var search_engines = [['bing', 'q'], ['google', 'q'], ['yahoo', 'q'], ['baidu', 'q'], ['yandex', 'q'], ['ask', 'q']];	// Список поисковиков
+    var ref = document.referrer;
     ref = ref.substr(ref.indexOf('//')+2);
     ref_domain = ref;
 
