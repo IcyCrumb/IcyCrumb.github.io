@@ -1,4 +1,4 @@
-function achieveGoal() {
+function GetURL() {
     alert("Цель достигнута");
     //alert ("Page URL: " + window.location.href);
 }
