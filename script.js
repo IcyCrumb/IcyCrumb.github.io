@@ -1,5 +1,6 @@
-function GetURL() {
-    alert ("Page URL: " + window.location.href);
+function achieveGoal() {
+    alert("Цель достигнута");
+    //alert ("Page URL: " + window.location.href);
 }
 
 
