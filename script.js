@@ -79,7 +79,7 @@ function getTrafficSource(cookieName, hostname) {
 // Self-invoking function
 (function() {
 
-    if (document.referrer > -1) {
+    if (document.referrer.length > 0) {
         writeLogic('TrafficSource');
     }
 
