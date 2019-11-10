@@ -1,5 +1,6 @@
 function GetURL() {
-    alert ("Page URL: " + window.location.href);
+    alert("Цель достигнута");
+    //alert ("Page URL: " + window.location.href);
 }
 
 
@@ -79,7 +80,7 @@ function getTrafficSource(cookieName, hostname) {
 // Self-invoking function
 (function() {
 
-    if (document.referrer > -1) {
+    if (document.referrer.length > 0) {
         writeLogic('TrafficSource');
     }
 
