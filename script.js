@@ -1,7 +1,7 @@
-function achieveGoal() {
+function achieveAGoal() {
     alert("Цель достигнута");
     //alert ("Page URL: " + window.location.href);
-}
+};
 
 
 function setCookie(cookieName, cookieValue, expireTime, path) {
@@ -24,7 +24,7 @@ function getParam(s, q) {
     } catch(e) {
         return '';
     }
-}
+};
 
 function calculateTrafficSource() {
     var source='', medium=''
@@ -61,7 +61,7 @@ function calculateTrafficSource() {
         'source'  : source,
         'medium'  : medium
     };
-}
+};
 
 function getTrafficSource(cookieName, hostname) {
 
@@ -73,8 +73,7 @@ function getTrafficSource(cookieName, hostname) {
         var value = source + ' / '  + medium;
 
         return value;
-}
-;
+};
 
 
 // Self-invoking function
